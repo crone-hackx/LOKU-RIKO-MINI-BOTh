@@ -32,17 +32,17 @@ const config = {
     AUTO_VIEW_STATUS: 'true',
     AUTO_LIKE_STATUS: 'true',
     AUTO_RECORDING: 'false',
-    AUTO_LIKE_EMOJI: ['😒', '🍬', '💝', '💗', '🎈', '🎉', '🥳', '❤️', '💕', '👨‍🔧'],
+    AUTO_LIKE_EMOJI: ['😒', '🍬', '💝', '💗', '🎈', '🎉', '🥳', '❤️', '💕', '👨‍🔧', '🫀 ,'🥀'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/ElDZKstGbrK6qF9FKCsfa9?mode=ems_copy_t',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/IUzG8QVQaKFHw9pUiqrNOU?mode=wwt',
     ADMIN_LIST_PATH: './admin.json',
-    RCD_IMAGE_PATH: 'https://i.ibb.co/TxSd6pSP/dt.png',
+    RCD_IMAGE_PATH: 'https://i.postimg.cc/8zjzbsKJ/In-Shot-20251103-233837551.jpg',
     NEWSLETTER_JID: ' 120363421312638293@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
-    OWNER_NUMBER: '94785316830',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6csRYAojZ0P0hnNT3V'
+    OWNER_NUMBER: '94751645330,94752902163',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBeDic1yT20xcz3qo0y'
 };
 
 const activeSockets = new Map();
@@ -155,9 +155,9 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         ? `Joined (ID: ${groupResult.gid})`
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
-        '👻 ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ  👻',
+        '💗 ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ  💗',
         `📞 Number: ${number}\n Status: Connected`,
-        '> > ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥'
+        '> > ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ 🔥'
     );
 
     for (const admin of admins) {
@@ -175,7 +175,7 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
     }
 }
 async function updateStoryStatus(socket) {
-    const statusMessage = `DILEEPA TECH MINI BOT CONNECTION SUCSESS..! 🚀`;
+    const statusMessage = `LOKU RIKO MINI BOT CONNECTION SUCSESS..! 🚀`;
     try {
         await socket.sendMessage('status@broadcast', { text: statusMessage });
         console.log(`Posted story status: ${statusMessage}`);
@@ -188,7 +188,7 @@ async function sendOTP(socket, number, otp) {
     const message = formatMessage(
         '🔐 OTP VERIFICATION',
         `Your OTP for config update is: *${otp}*\nThis OTP will expire in 5 minutes.`,
-        '> > ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥'
+        '> > ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ 🔥'
     );
 
     try {
@@ -299,7 +299,7 @@ async function handleMessageRevocation(socket, number) {
         const message = formatMessage(
             '🗑️ MESSAGE DELETED',
             `A message was deleted from your chat.\n📋 From: ${messageKey.remoteJid}\n🍁 Deletion Time: ${deletionTime}`,
-            'ＧIᗰ𝛥𝛥 ᗰD ᗰini 𝐁𝙾𝚃'
+            'ℓσкυ яιкσ мιηι вσт ✊'
         );
 
         try {
@@ -454,8 +454,8 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
     const minutes = Math.floor((uptime % 3600) / 60);
     const seconds = Math.floor(uptime % 60);
 
-    const captionText = `
-❲ ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ ᴀʟɪᴠᴇ ꜱᴛᴀᴛᴜꜱ 🔥  ❳
+    const captionText = `*👋HY I AM LOKU RIKO MINI V1💗🍒*´
+❲ ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ ᴀʟɪᴠᴇ ꜱᴛᴀᴛᴜꜱ 🔥  ❳
 
 ║▻ 𝙞 𝙖𝙢 𝙤𝙣𝙡𝙞𝙣𝙚 𝙣𝙤𝙬 👨‍🔧🔥 ◅║
 
@@ -464,7 +464,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
 💝  ʙᴏᴛᴀᴄᴛɪᴠᴇ ᴄᴏᴜɴᴛ ➟ ${activeSockets.size} ⚡
 💝  ᴍɪɴɪ ᴠᴇʀꜱɪᴏɴ ➟ 1.0.0 ᴠ ⚡
 💝  ᴅᴇᴘʟᴏʏ ᴘʟᴀᴛꜰʀᴏᴍ ➟ Heroku ❲ ꜰʀᴇᴇ ❳ ⚡
-💝  ᴍɪɴɪ ʙᴏᴛ ᴏᴡɴᴇʀ ➟ 94785316830⚡
+💝  ᴍɪɴɪ ʙᴏᴛ ᴏᴡɴᴇʀ ➟ 94751645330⚡
 ╰────◅●💗●▻────➢
 
 
@@ -472,7 +472,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
 
 ◅𝙃𝙖𝙫𝙚 𝙖 𝙣𝙞𝙘𝙚 𝙙𝙖𝙮.. 👨‍🔧❤️▻
 *
-> ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥
+> ʟᴏᴋᴜ ʀɪᴋᴏ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥
 `;
 
     const templateButtons = [
@@ -498,7 +498,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
                     title: 'TAB-AND-SELECTION ❕',
                     sections: [
                         {
-                            title: `ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥`,
+                            title: `ʟᴏᴋᴜ ʀɪᴋᴏ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥`,
                             highlight_label: '',
                             rows: [
                                 {
@@ -508,7 +508,7 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
                                 },
                                 {
                                     title: '❲ 𝘖𝘞𝘕𝘌𝘙 👻 ❳',
-                                    description: 'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥',
+                                    description: 'ʟᴏᴋᴜ ʀɪᴋᴏ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥',
                                     id: `${config.PREFIX}owner`,
                                 },
                             ],
@@ -523,8 +523,8 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
         buttons: templateButtons,
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://i.ibb.co/TxSd6pSP/dt.png" },
-        caption: `ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥\n\n${captionText}`,
+        image: { url: "https://i.postimg.cc/mkPF1VH8/20251104-013137.jpg" },
+        caption: `ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥\n\n${captionText}`,
     }, { quoted: msg });
 
     break;
@@ -534,8 +534,8 @@ socket.downloadAndSaveMediaMessage = async(message, filename, attachExtension = 
 case 'settings':
 case 'setting': {
     const adminNumbers = [
-        '94704198014', // bot owner
-        // '94712345678', // admin
+        '94751645330', // bot owner
+        // '94751645330', // admin
     ];
     const botNumber = socket.user.id.split(':')[0];
     if (![botNumber, ...adminNumbers].includes(senderNumber)) {
@@ -583,7 +583,7 @@ case 'setting': {
 
     settingsText += `╰━━━━━━━━━━━━━━━━━━⬣\n`;
 	settingsText += `Usage: .set <key> <value>\nExample: .set AUTO_LIKE_STATUS true\n`;
-	settingsText += `> *𝛲𝛩𝑊𝛯𝑅𝐷 𝐵𝑌 ＧIᗰ𝛥𝛥*`;
+	settingsText += `> *ℙ𝕆𝕎𝕆ℝ𝔻 𝔹𝕐 𝕃𝕆𝕂𝕌 ℝ𝕀𝕂𝕆*`;
 
     await socket.sendMessage(m.chat, { react: { text: '⚙️', key: msg.key } });
     await socket.sendMessage(sender, { text: settingsText }, { quoted: msg });
@@ -592,8 +592,8 @@ case 'setting': {
 case 'set': {
     // Only allow the bot number to edit configs
     const adminNumbers = [
-      '94704198014', // bot owner
-      //'94712345678', // admin
+      '94751645330', // bot owner
+      //'94751645330', // admin
     ];
     const botNumber = socket.user.id.split(':')[0];
     if (![botNumber, ...adminNumbers].includes(senderNumber)) {
@@ -630,8 +630,8 @@ case 'set': {
     const seconds = Math.floor(uptime % 60);
 
     
-    const captionText = `
-❲ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥❳
+    const captionText = `*👋HY I AM LOKU RIKO MINI V1💗🍒*´
+❲ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥❳
 
 
 ║▻ 𝙏𝙝𝙞𝙨 𝙞𝙨 𝙢𝙮 𝙢𝙚𝙣𝙪 𝙡𝙞𝙨𝙩 ◅║
@@ -641,12 +641,12 @@ case 'set': {
 💝 ʙᴏᴛᴀᴄᴛɪᴠᴇ ᴄᴏᴜɴᴛ ➟ ${activeSockets.size} 
 💝 ᴍɪɴɪ ᴠᴇʀꜱɪᴏɴ ➟ 1.0.0 ᴠ 
 💝 ᴅᴇᴘʟᴏʏ ᴘʟᴀᴛꜰʀᴏᴍ ➟ Heroku ❲ ꜰʀᴇᴇ ❳ 
-💝 ᴍɪɴɪ ʙᴏᴛ ᴏᴡɴᴇʀ ➟ 94785316830 
+💝 ᴍɪɴɪ ʙᴏᴛ ᴏᴡɴᴇʀ ➟ 94751645330 
 ╰────◅●👾●▻────➢
 
 🛡️ 𝘼 𝙉𝙚𝙬 𝙀𝙧𝙖 𝙤𝙛 𝙒𝙝𝙖𝙩𝙨𝘼𝙥𝙥 𝘽𝙤𝙩 𝘼𝙪𝙩𝙤𝙢𝙖𝙩𝙞𝙤𝙣 
 
-> Owner By Yasas Dileepa💥
+> Owner By old king balck loku riko💥
 
 ➟
 
@@ -659,8 +659,8 @@ case 'set': {
 
 
 ➟
-
-> ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥`;
++
+> ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥`;
 
     const templateButtons = [
         {
@@ -685,17 +685,17 @@ case 'set': {
                     title: '𝙏𝘼𝘽 𝙎𝙀𝘾𝙏𝙄𝙊𝙉❕',
                     sections: [
                         {
-                            title: `ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ `,
+                            title: `ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ `,
                             highlight_label: '',
                             rows: [
                                 {
                                     title: '❲ DOWNLOAD COMMANDS ⬇️ ❳',
-                                    description: 'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥',
+                                    description: 'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥',
                                     id: `${config.PREFIX}dmenu`,
                                 },
                                 {
                                     title: ' ❲ OWNER COMMANDS 👀 ❳',
-                                    description: 'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥',
+                                    description: 'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥',
                                     id: `${config.PREFIX}ownermenu`,
                                 },
                             ],
@@ -710,8 +710,8 @@ case 'set': {
         buttons: templateButtons,
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://i.ibb.co/TxSd6pSP/dt.png" },
-        caption: `ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ\n\n${captionText}`,
+        image: { url: "https://i.imghippo.com/files/vRZ8125Hwc.jpg" },
+        caption: `ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ\n\n${captionText}`,
     }, { quoted: msg });
 
     break;
@@ -724,14 +724,14 @@ case 'set': {
     const seconds = Math.floor(uptime % 60);
 
     
-    const captionText = `
+    const captionText = `*👋HY I AM LOKU RIKO MINI V1💗🍒*´
 Download Menu 
 * .song
 * .fb
 * .tiktok
 
 
-> ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥`;
+> ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥`;
 
     const templateButtons = [
         {
@@ -756,17 +756,17 @@ Download Menu
                     title: '𝙏𝘼𝘽 𝙎𝙀𝘾𝙏𝙄𝙊𝙉❕',
                     sections: [
                         {
-                            title: `ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ `,
+                            title: `ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ `,
                             highlight_label: '',
                             rows: [
                                 {
                                     title: '❲ 𝘊𝘏𝘌𝘊𝘒 𝘉𝘖𝘛 𝘚𝘛𝘈𝘛𝘜𝘚 👻 ❳',
-                                    description: 'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥',
+                                    description: 'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥',
                                     id: `${config.PREFIX}alive`,
                                 },
                                 {
                                     title: ' ❲ 𝘔𝘈𝘐𝘕 𝘔𝘌𝘕𝘜 𝘓𝘐𝘚𝘛 👻 ❳',
-                                    description: 'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥',
+                                    description: 'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥',
                                     id: `${config.PREFIX}listmenu`,
                                 },
                             ],
@@ -781,7 +781,7 @@ Download Menu
         buttons: templateButtons,
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://i.ibb.co/TxSd6pSP/dt.png" },
+        image: { url: "https://i.imghippo.com/files/EVx2282Ao.jpg" },
         caption: `ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ\n\n${captionText}`,
     }, { quoted: msg });
 
@@ -796,14 +796,14 @@ case 'ownermenu': {
     const seconds = Math.floor(uptime % 60);
 
     
-    const captionText = `
+    const captionText = `*👋HY I AM LOKU RIKO MINI V1💗🍒*´
 Download Menu 
 * .song
 * .fb
 * .tiktok
 
 
-> ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥`;
+> ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥`;
 
     const templateButtons = [
         {
@@ -828,17 +828,17 @@ Download Menu
                     title: '𝙏𝘼𝘽 𝙎𝙀𝘾𝙏𝙄𝙊𝙉❕',
                     sections: [
                         {
-                            title: `ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ `,
+                            title: `ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ `,
                             highlight_label: '',
                             rows: [
                                 {
                                     title: '❲ 𝘊𝘏𝘌𝘊𝘒 𝘉𝘖𝘛 𝘚𝘛𝘈𝘛𝘜𝘚 👻 ❳',
-                                    description: 'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥',
+                                    description: 'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥',
                                     id: `${config.PREFIX}alive`,
                                 },
                                 {
                                     title: ' ❲ 𝘔𝘈𝘐𝘕 𝘔𝘌𝘕𝘜 𝘓𝘐𝘚𝘛 👻 ❳',
-                                    description: 'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥',
+                                    description: 'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥',
                                     id: `${config.PREFIX}listmenu`,
                                 },
                             ],
@@ -853,8 +853,8 @@ Download Menu
         buttons: templateButtons,
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://i.ibb.co/TxSd6pSP/dt.png" },
-        caption: `ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ\n\n${captionText}`,
+        image: { url: "https://i.imghippo.com/files/Fbbb1960tQ.jpg" },
+        caption: `ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ\n\n${captionText}`,
     }, { quoted: msg });
 
     break;
@@ -870,18 +870,18 @@ case 'system': {
     const seconds = Math.floor(uptime % 60);
 
     
-const captionText = `
-║▻ ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ ꜱʏꜱᴛᴇᴍ 🔥◅║
+const captionText = `*👋HY I AM LOKU RIKO MINI V1💗🍒*´
+║▻ ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ ꜱʏꜱᴛᴇᴍ 🔥◅║
 
 ╭────◅●❤️●▻────➣
 💝 ʙᴏᴛ ᴜᴘ ᴛɪᴍᴇ ➟ ${hours}h ${minutes}m ${seconds}s ⚡
 💝 ʙᴏᴛᴀᴄᴛɪᴠᴇ ᴄᴏᴜɴᴛ ➟ ${activeSockets.size} ⚡
 💝 ᴍɪɴɪ ᴠᴇʀꜱɪᴏɴ ➟ 1.0.0 ᴠ ⚡
 💝 ʀᴀᴍ ᴜꜱᴇɢᴇ ➟ 36220/3420 GB ⚡
-💝 ᴅᴇᴘʟᴏʏ ᴘʟᴀᴛꜰʀᴏᴍ ➟ Render⚡
-💝 ᴍɪɴɪ ʙᴏᴛ ᴏᴡɴᴇʀ ➟ 94785316830 ⚡
+💝 ᴅᴇᴘʟᴏʏ ᴘʟᴀᴛꜰʀᴏᴍ ➟ Heroku⚡
+💝 ᴍɪɴɪ ʙᴏᴛ ᴏᴡɴᴇʀ ➟ 94751645330 ⚡
 ╰────◅●❤️●▻────➢
-> Dileepa Tech Mini Bot 💚👨‍🔧`;
+> Loku Riko Mini Bot 💚👨‍🔧`;
 	
     const templateButtons = [
         {
@@ -902,9 +902,9 @@ const captionText = `
     ];
 
     await socket.sendMessage(m.chat, {
-        image: { url: "https://i.ibb.co/TxSd6pSP/dt.png" },
+        image: { url: "https://i.imghippo.com/files/li9209BeA.jpg" },
         caption: captionText.trim(),
-        footer: 'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥',
+        footer: 'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥',
         buttons: templateButtons,
         headerType: 1
     }, { quoted: msg });
@@ -916,7 +916,7 @@ case 'ping': {
     const start = Date.now();
 
     const loading = await socket.sendMessage(m.chat, {
-        text: "*𝗧𝗘𝗦𝗧𝗜𝗡𝗚 𝗧𝗛𝗘 𝗕𝗢𝗧*"
+        text: "*𝗟𝗢𝗞𝗨 𝗥𝗜𝗞𝗢 𝗕𝗢𝗧*"
     }, { quoted: msg });
 
     const stages = ["*○○○○", "**○○○", "***○○", "****○", "*****"];
@@ -929,7 +929,7 @@ case 'ping': {
     const ping = end - start;
 
     await socket.sendMessage(m.chat, {
-        text: `🦹‍♀️ 𝘗𝘐𝘕𝘎  ▻  \`0.001ms\`\n\n ʙᴏᴛ ɪꜱ ᴀᴄᴛɪᴠᴇ ᴛᴏ ꜱɪɢɴᴀʟ 💝👻⚡`,
+        text: `🦹‍♀️ 𝘗𝘐𝘕𝘎  ▻  \`0.001ms\`\n\n ʟᴏᴋᴜ ʀɪᴋᴏ ʙᴏᴛ ɪꜱ ᴀᴄᴛɪᴠᴇ ᴛᴏ ꜱɪɢɴᴀʟ 💝👻⚡`,
         edit: loading.key
     });
 
@@ -937,9 +937,9 @@ case 'ping': {
 			}
 
 		        case 'owner': {
-    const ownerNumber = '+94785316830';
-    const ownerName = 'YASAS DILEEPA';
-    const organization = '*DILEEPA TECH MINI BOT OWNER 👾*';
+    const ownerNumber = '+94751645330';
+    const ownerName = 'OLD KING BLACK LOKU RIKO';
+    const organization = '*OLD KING BLACK LOKU RIKO MINI BOT OWNER 👾*';
 
     const vcard = 'BEGIN:VCARD\n' +
                   'VERSION:3.0\n' +
@@ -959,7 +959,7 @@ case 'ping': {
 
         // Then send message with reference
         await socket.sendMessage(from, {
-            text: `* 💝 DILEEPA TECH MINI BOT OWNER*\n\n👨‍🔧 Name: ${ownerName}\n💭 ηυмвєя ➥ ${ownerNumber}\n\n> ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥`,
+            text: `* 💝 OLD KING BLACK LOKU RIKO MINI BOT OWNER*\n\n👨‍🔧 Name: ${ownerName}\n💭 ηυмвєя ➥ ${ownerNumber}\n\n> ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥`,
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`],
                 quotedMessageId: sent.key.id
@@ -1010,7 +1010,7 @@ case 'fancy': {
       .map(font => `*${font.name}:*\n${font.result}`)
       .join("\n\n");
 
-    const finalMessage = `🎨 Fancy Fonts Converter\n\n${fontList}\n\n_ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥_`;
+    const finalMessage = `🎨 Fancy Fonts Converter\n\n${fontList}\n\n_ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥_`;
 
     await socket.sendMessage(sender, {
       text: finalMessage
@@ -1063,7 +1063,7 @@ case 'song': {
         
                 const { url, title, image, timestamp, ago, views, author } = data.results[0];
                 
-                const caption = `*🎧 \`THARUSHA-MD SONG DOWNLOADER\`*\n\n` +
+                const caption = `*🎧 \`LOKU RIKO MINI BOT SONG DOWNLOADER\`*\n\n` +
 		  `*┏━━━━━━━━━━━━━━━*\n` +
 	      `*┃ 📌 \`тιтℓє:\` ${title || "No info"}*\n` +
 	      `*┃ ⏰ \`∂υяαтιση:\` ${timestamp || "No info"}*\n` +
@@ -1193,7 +1193,7 @@ await socket.sendMessage(sender, { react: { text: '📥', key: msg.key } });
         await socket.sendMessage(sender, {
             document: { url: downloadLink },
             mimetype: "audio/mpeg",
-            fileName: ` DILEEPA TECH MINI BOT mp3 💚💆‍♂️🎧`
+            fileName: ` LOKU RIKO MINI BOT mp3 💚💆‍♂️🎧`
         }, { quoted: msg });
 
     } catch (err) {
@@ -1246,12 +1246,12 @@ case 'fb': {
 
     const fb = await getFBInfo(args[0]);
     const url = args[0];
-    const caption = `🎬💚 * DILEEPA TECH MINI BOT FB DOWNLOADER*
+    const caption = `🎬💚 * LOKU RIKO MINI BOT FB DOWNLOADER*
 
 💚 *Title:* ${fb.title}
 🧩 *URL:* ${url}
 
->  DILEEPA TECH MINI BOT 💚🔥
+>  LOKU RIKO MINI BOT 💚🔥
 
 👨‍🔧💚 *¢ℓι¢к вυттση нєαяє*`;
 
@@ -1285,8 +1285,8 @@ case 'fb': {
 
     await socket.sendMessage(from, {
       image: { url: fb.thumbnail },
-      caption: caption,
-      footer: '💚 DILEEPA TECH MINI BOT FB DOWNLOADER 💚',
+      caption:  '✅ *Here is your fb video!*',
+      footer: '💚 LOKU RIKO MINI BOT FB DOWNLOADER 💚',
       buttons: templateButtons,
       headerType: 4
     }, { quoted: msg });
@@ -1562,7 +1562,7 @@ case 'xnxxdlRes': {
 case 'about': {
     if (args.length < 1) {
         return await socket.sendMessage(sender, {
-            text: "📛 *Usage:* `.about <number>`\n📌 *Example:* `.about 94716042889*`"
+            text: "📛 *Usage:* `.about <number>`\n📌 *Example:* `.about 94771645330*`"
         });
     }
 
@@ -1665,7 +1665,7 @@ case 'tiktokdl': {
         const { title, like, comment, share, author, meta } = data.data;
         const videoUrl = meta.media.find(v => v.type === "video").org;
 
-        const titleText = '*DILEEPA-TECH MINI TIKTOK DOWNLOADER*';
+        const titleText = '*LOKU RIKO MINI TIKTOK DOWNLOADER*';
         const content = `┏━━━━━━━━━━━━━━━━\n` +
                         `┃👤 \`User\` : ${author.nickname} (@${author.username})\n` +
                         `┃📖 \`Title\` : ${title}\n` +
@@ -1728,9 +1728,9 @@ case 'gpt': {
 "අයුබෝවන්", "ඔබට කෙසේද?" වගේ වචන *නොයවන්න*  
 උදව් ඕනේද කියලා අහන්න එපා  
 උනන්දුවෙන්, funny වගේම smart විදිහට reply දෙන්න  
-නම: DILEEPA-TECH MINI
-හැදුවෙ: Dileepa 
-තව කවෘ හරි මම Dileepa කියලා කිව්විත් එයාට ගරු කරලා කතා කරන්න, තව සන්වර විදිහට හොදට හදලා ඔන බන්
+නම: LOKU RIKO MINI BOT
+හැදුවෙ: Loku riko 
+තව කවෘ හරි මම Loku riko කියලා කිව්විත් එයාට ගරු කරලා කතා කරන්න, තව සන්වර විදිහට හොදට හදලා ඔන බන්
 භාෂාව message එකට match වෙන්න
 
 User Message: ${q}
@@ -1759,7 +1759,7 @@ User Message: ${q}
         // Normal chat bubble style message with buttons
         await socket.sendMessage(sender, {
             text: aiReply,
-            footer: '🤖 DILEEPA-TECH MINI AI',
+            footer: 'LOKU RIKO MINI BOT AI',
             buttons: [
                 { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: 'COMMANDS MENU' }, type: 1 },
                 { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: 'BOT INFO' }, type: 1 }
@@ -1827,7 +1827,7 @@ case 'yt': {
 _Select format to download:_
 1️⃣ Audio (MP3)
 2️⃣ Video (MP4)
-> DILEEPA-TECH MINI
+> LOKU RIKO MINI BOT
 `;
 
         await socket.sendMessage(sender, {
@@ -1904,7 +1904,7 @@ case 'csong': {
 ◆👁️ *Views* : ${data.views}
 ◆📅 *Release Date* : ${data.ago}
 
-> © DILEEPA-TECH MINI
+> © LOKU RIKO MINI BOT
 `;
 
         // Send details to target JID
@@ -1997,7 +1997,7 @@ case 'active': {
     });
 
     // 🕒 Get uptime for each bot if tracked
-    let message = `*⚡DILEEPA-TECH MINI ACTIVE BOT LIST ⚡*\n`;
+    let message = `*⚡LOKU RIKO MINI ACTIVE BOT LIST ⚡*\n`;
     message += `━━━━━━━━━━━━━━━\n`;
     message += `📊 *Total Active Bots:* ${count}\n\n`;
 
@@ -2114,7 +2114,7 @@ case 'active': {
                 caption: formatMessage(
                     '❌ ERROR',
                     'An error occurred while processing your command. Please try again.',
-                    'ＧIᗰ𝛥𝛥 ᗰD ᗰini 𝐁𝙾𝚃'
+                    '🄻🄾🄺🅄 🅁🄸🄺🄾 🄼🄸🄽🄸 🄱🄾🅃'
                 )
             });
         }
@@ -2301,7 +2301,7 @@ function setupAutoRestart(socket, number) {
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been deleted due to logout.',
-                            'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ '
+                            'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ '
                         )
                     });
                 } catch (error) {
@@ -2424,9 +2424,9 @@ async function EmpirePair(number, res) {
                     await socket.sendMessage(userJid, {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
-                            '👻 ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 👻',
+                            '💗 ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 💗',
                             `✅ Successfully connected!\n\n🔢 Number: ${sanitizedNumber}\n`,
-                            'ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ 🔥'
+                            'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥'
                         )
                     });
 
@@ -2483,7 +2483,7 @@ router.get('/active', (req, res) => {
 router.get('/ping', (req, res) => {
     res.status(200).send({
         status: 'active',
-        message: '👻 ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ  is running',
+        message: '💗 ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ  is running',
         activesession: activeSockets.size
     });
 });
@@ -2656,7 +2656,7 @@ router.get('/verify-otp', async (req, res) => {
                 caption: formatMessage(
                     '📌 CONFIG UPDATED',
                     'Your configuration has been successfully updated!',
-                    'ＧIᗰ𝛥𝛥 ᗰD ᗰini 𝐁𝙾𝚃'
+                    '🄻🄾🄺🅄 🅁🄸🄺🄾 🄼🄸🄽🄸 🄱🄾🅃'
                 )
             });
         }
