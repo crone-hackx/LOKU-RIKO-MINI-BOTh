@@ -1,5 +1,5 @@
 {
-  "name": "CYBER-HUNTER" ,
+  "name": "LOKU RIKO" ,
   "version": "1.0.0",
   "description": " WhatsApp Bot with Multi-Number Support",
   "main": "index.js",
@@ -39,6 +39,6 @@
     "baileys",
     "shala-md"
   ],
-  "author": "SHALA",
+  "author": "LOKU RIKO",
   "license": "MIT"
 }
