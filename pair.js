@@ -710,7 +710,7 @@ case 'set': {
         buttons: templateButtons,
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://i.imghippo.com/files/vRZ8125Hwc.jpg" },
+        image: { url: "https://i.imghippo.com/files/op3138ovg.jpg" },
         caption: `ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ\n\n${captionText}`,
     }, { quoted: msg });
 
@@ -781,7 +781,7 @@ Download Menu
         buttons: templateButtons,
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://i.imghippo.com/files/EVx2282Ao.jpg" },
+        image: { url: "https://i.imghippo.com/files/UED5009kHk.jpg" },
         caption: `ᴅɪʟᴇᴇᴘᴀ ᴛᴇᴄʜ ᴍɪɴɪ ʙᴏᴛ\n\n${captionText}`,
     }, { quoted: msg });
 
@@ -853,7 +853,7 @@ Download Menu
         buttons: templateButtons,
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://i.imghippo.com/files/Fbbb1960tQ.jpg" },
+        image: { url: "https://i.imghippo.com/files/cy5117fwE.jpg" },
         caption: `ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ\n\n${captionText}`,
     }, { quoted: msg });
 
@@ -902,7 +902,7 @@ const captionText = `*👋HY I AM LOKU RIKO MINI V1💗🍒*´
     ];
 
     await socket.sendMessage(m.chat, {
-        image: { url: "https://i.imghippo.com/files/li9209BeA.jpg" },
+        image: { url: "https://i.imghippo.com/files/J9894KY.jpg" },
         caption: captionText.trim(),
         footer: 'ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ 🔥',
         buttons: templateButtons,
