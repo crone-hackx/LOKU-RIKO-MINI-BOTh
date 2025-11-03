@@ -22,7 +22,7 @@ app.listen(PORT, () => {
     console.log(`
 Don't Forget To Give Star ‼️
 
-𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳
+𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐋𝙾𝙺𝚄 𝐑𝙸𝙺𝙾
 
 Server running on http://localhost:` + PORT)
 });
