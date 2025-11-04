@@ -34,3 +34,10 @@
 👇*
 
  > *☕ Thank you for creating your Mini Bot ❤️‍🩹💐 Introduce this bot service to your friends too. Get your Free Bot from this website 👇*
+
+</p>
+
+<!-- Alive Footer Animation -->
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="50" width="100%">
+</p>
