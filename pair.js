@@ -710,7 +710,7 @@ case 'set': {
         buttons: templateButtons,
         headerType: 1,
         viewOnce: true,
-        image: { url: "https://i.postimg.cc/v8PMXQ5P/In-Shot-20251104-100056320.jpg" },
+        image: { url: "https://i.postimg.cc/ydMGpb65/In-Shot-20251104-100917535.jpg" },
         caption: `ʟᴏᴋᴜ ʀɪᴋᴏ ᴍɪɴɪ ʙᴏᴛ\n\n${captionText}`,
     }, { quoted: msg });
 
