@@ -8,7 +8,7 @@
 
 <!-- Alive Footer Animation -->
 <p align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="50" width="100%">
 </p>
 
 </p>
@@ -24,5 +24,5 @@
 
 <!-- Alive Footer Animation -->
 <p align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="40" width="100%">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="50" width="100%">
 </p>
