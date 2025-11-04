@@ -15,7 +15,7 @@
 
 <!-- Banner Image -->
 <p align="center">
-  <a href="https://i.postimg.cc/8zjzbsKJ/In-Shot-20251103-233837551.jpg">
+  <a href="https://i.imghippo.com/files/GFuA9132q.jpg">
     <img src="https://i.postimg.cc/8zjzbsKJ/In-Shot-20251103-233837551.jpg" width="100%" height="auto">
   </a>
 </p>
