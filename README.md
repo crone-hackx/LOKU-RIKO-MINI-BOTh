@@ -26,3 +26,11 @@
 <p align="center">
   <img src="https://i.imgur.com/dBaSKWF.gif" height="50" width="100%">
 </p>
+
+
+~*_🪻LOKU RIKO MINI BOT TEXT MASSAGE🪻_*~
+
+> *☕ මිනි බොට් සදා ගත් ඔබට ස්තුතියි 🙏 ඔබේ යාලුවන්ටත් මේ බොට් වරයාව හදුන්වා දෙන්න.මෙම වෙබ් එකෙන් ඔබේ Free Bot ලබාගන්න
+👇*
+
+ > *☕ Thank you for creating your Mini Bot ❤️‍🩹💐 Introduce this bot service to your friends too. Get your Free Bot from this website 👇*
